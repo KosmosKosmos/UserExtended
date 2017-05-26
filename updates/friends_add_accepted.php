@@ -12,7 +12,7 @@ class FriendsAddAccepted extends Migration
     {
         Schema::table('clake_userextended_friends', function($table)
         {
-            $table->boolean('accepted');
+            $table->boolean('accepted')->default(0);
         });
     }
 
